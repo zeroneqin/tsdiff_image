@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+    <title>TSImage_Diff</title>
+</head>
+<body>
+<div class="h1 card text-center">
+    <div class="card-title text-primary">
+        Test Service Diff -- Image
+    </div>
+</div>
+<div class="container-fluid">
+    <form name="name_form" id="id_form" method="post" enctype="multipart/form-data">
+        <div class="row border">
+            <div class="col-md-6 border">
+                <div class="form-group">
+                    <label for="id_input_sourcefile">源图片文件</label>
+                    <input type="file" class="form-control-file" id="id_input_sourcefile">
+                </div>
+            </div>
+            <div class="col-md-6 border">
+                <div class="form-group">
+                    <label for="id_input_targetfile">目标图片文件</label>
+                    <input type="file" class="form-control-file" id="id_input_targetfile">
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="row border">
+        <div class="col-md-12 border text-center">
+            <button id="id_btn_compare" type="button" class="btn btn-primary">Compare</button>
+        </div>
+    </div>
+    <div class="row border">
+        <div class="col-md-12 border">
+            <label class="text-center">结果</label>
+            <div id="id_div_result"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="javascripts/bootstrap.js"></script>
+<script src="javascripts/jquery.js"></script>
+<script src="javascripts/requestdiff.js"></script>
+</html>
